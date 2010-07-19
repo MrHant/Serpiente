@@ -20,8 +20,7 @@
     <option directives="" />
     <option flashStrict="False" />
     <option mainClass="serpiente.Main" />
-    <option override="False" />
-    <option verbose="False" />
+    <option forcetraces="False" />
     <option additional="" />
   </build>
   <!-- haxelib libraries -->
