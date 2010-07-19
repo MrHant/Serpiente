@@ -32,11 +32,26 @@
     <compile path="src\Main.hx" />
     <compile path="src\serpiente\Main.hx" />
     <compile path="src\serpiente\SButton.hx" />
+    <compile path="src\serpiente\BodyPart.hx" />
+    <compile path="src\serpiente\Bonus.hx" />
+    <compile path="src\serpiente\DataProvider.hx" />
+    <compile path="src\serpiente\Game.hx" />
+    <compile path="src\serpiente\LibraryClasses.hx" />
+    <compile path="src\serpiente\Scores.hx" />
+    <compile path="src\serpiente\Snake.hx" />
+    <compile path="src\serpiente\StartPage.hx" />
   </compileTargets>
   <!-- Assets to embed into the output SWF -->
   <library>
     <asset path="library\library2.swf" />
     <asset path="library\library.swf" />
+    <asset path="src\serpiente\Ad.png" bitmap="True" id="serpiente.AD_png" />
+    <asset path="src\serpiente\bonus.png" bitmap="True" id="serpiente.BONUS_png" />
+    <asset path="src\serpiente\Wasd.png" bitmap="True" id="serpiente.WASD_png" />
+    <asset path="src\serpiente\strawberry.png" bitmap="True" id="serpiente.STRAWBERRY_png" />
+    <asset path="src\serpiente\head_old.png" bitmap="False" />
+    <asset path="src\serpiente\head.png" bitmap="True" id="serpiente.HEAD_png" />
+    <asset path="src\serpiente\orange.png" bitmap="True" id="serpiente.ORANGE_png" />
   </library>
   <!-- Paths to exclude from the Project Explorer tree -->
   <hiddenPaths>
@@ -49,6 +64,7 @@
   <!-- Other project options -->
   <options>
     <option showHiddenPaths="False" />
-    <option testMovie="Default" />
+    <option testMovie="OpenDocument" />
+    <option testMovieCommand="G:\haXeProjects\Serpiente_v2\bin\index.html" />
   </options>
 </project>
