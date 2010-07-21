@@ -8,13 +8,13 @@
       <clip id="Sharepoint__" />
       <clip id="library.library2.swf" name="library.library2.swf" import="library\library2.swf" size="73003" modified="01.08.2008 17:02:42" />
       <clip id="library.library.swf" name="library.library.swf" import="library\library.swf" size="3496" modified="19.07.2010 18:59:46" />
-      <bitmap id="serpiente.AD_png" name="serpiente.AD_png" import="src\serpiente\Ad.png" size="4468" modified="06.06.2009 18:31:23" />
-      <bitmap id="serpiente.BONUS_png" name="serpiente.BONUS_png" import="src\serpiente\bonus.png" size="5746" modified="07.06.2009 7:47:06" />
-      <bitmap id="serpiente.WASD_png" name="serpiente.WASD_png" import="src\serpiente\Wasd.png" size="6411" modified="03.06.2009 19:46:30" />
-      <bitmap id="serpiente.STRAWBERRY_png" name="serpiente.STRAWBERRY_png" import="src\serpiente\strawberry.png" size="9296" modified="07.06.2009 16:16:16" />
-      <clip id="src.serpiente.head_old.png" name="src.serpiente.head_old.png" import="src\serpiente\head_old.png" size="1554" modified="07.06.2009 18:23:06" />
-      <bitmap id="serpiente.HEAD_png" name="serpiente.HEAD_png" import="src\serpiente\head.png" size="6200" modified="17.02.2010 22:00:19" />
-      <bitmap id="serpiente.ORANGE_png" name="serpiente.ORANGE_png" import="src\serpiente\orange.png" size="14497" modified="07.06.2009 16:33:54" />
+      <bitmap id="serpiente.AD_png" name="serpiente.AD_png" import="library\images\Ad.png" size="4468" modified="06.06.2009 18:31:23" />
+      <bitmap id="serpiente.BONUS_png" name="serpiente.BONUS_png" import="library\images\bonus.png" size="5746" modified="07.06.2009 7:47:06" />
+      <bitmap id="serpiente.HEAD_png" name="serpiente.HEAD_png" import="library\images\head.png" size="6200" modified="17.02.2010 22:00:19" />
+      <clip id="library.images.head_old.png" name="library.images.head_old.png" import="library\images\head_old.png" size="1554" modified="07.06.2009 18:23:06" />
+      <bitmap id="serpiente.ORANGE_png" name="serpiente.ORANGE_png" import="library\images\orange.png" size="14497" modified="07.06.2009 16:33:54" />
+      <bitmap id="serpiente.STRAWBERRY_png" name="serpiente.STRAWBERRY_png" import="library\images\strawberry.png" size="9296" modified="07.06.2009 16:16:16" />
+      <bitmap id="serpiente.WASD_png" name="serpiente.WASD_png" import="library\images\Wasd.png" size="6411" modified="03.06.2009 19:46:30" />
     </library>
   </frame>
 </movie>

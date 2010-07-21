@@ -45,13 +45,13 @@
   <library>
     <asset path="library\library2.swf" />
     <asset path="library\library.swf" />
-    <asset path="src\serpiente\Ad.png" bitmap="True" id="serpiente.AD_png" />
-    <asset path="src\serpiente\bonus.png" bitmap="True" id="serpiente.BONUS_png" />
-    <asset path="src\serpiente\Wasd.png" bitmap="True" id="serpiente.WASD_png" />
-    <asset path="src\serpiente\strawberry.png" bitmap="True" id="serpiente.STRAWBERRY_png" />
-    <asset path="src\serpiente\head_old.png" bitmap="False" />
-    <asset path="src\serpiente\head.png" bitmap="True" id="serpiente.HEAD_png" />
-    <asset path="src\serpiente\orange.png" bitmap="True" id="serpiente.ORANGE_png" />
+    <asset path="library\images\Ad.png" bitmap="True" id="serpiente.AD_png" />
+    <asset path="library\images\bonus.png" bitmap="True" id="serpiente.BONUS_png" />
+    <asset path="library\images\head.png" bitmap="True" id="serpiente.HEAD_png" />
+    <asset path="library\images\head_old.png" bitmap="False" />
+    <asset path="library\images\orange.png" bitmap="True" id="serpiente.ORANGE_png" />
+    <asset path="library\images\strawberry.png" bitmap="True" id="serpiente.STRAWBERRY_png" />
+    <asset path="library\images\Wasd.png" bitmap="True" id="serpiente.WASD_png" />
   </library>
   <!-- Paths to exclude from the Project Explorer tree -->
   <hiddenPaths>

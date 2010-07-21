@@ -69,10 +69,10 @@ class StartPage
 		var fieldGraphics : Graphics = field.graphics;
 		// # draws field border
 		fieldGraphics.moveTo(0, 0);
-		fieldGraphics.lineStyle(3, 0xFF0000, 0.7);
-		fieldGraphics.lineTo(0, 499);
-		fieldGraphics.lineTo(499, 499);
-		fieldGraphics.lineTo(499, 0);
+		fieldGraphics.lineStyle(3, 0x480DA6, 0.7);
+		fieldGraphics.lineTo(0, 549);
+		fieldGraphics.lineTo(599, 549);
+		fieldGraphics.lineTo(599, 0);
 		fieldGraphics.lineTo(0, 0);
 		Main.mc.stage.addChild(field);
 		Main.mc.stage.addChild(Scores.scoreField);

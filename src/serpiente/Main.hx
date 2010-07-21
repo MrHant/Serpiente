@@ -44,7 +44,7 @@ class Main
 	static function main() 
 	{
 
-#if debug
+#if !debug
 		onAddedToStage();
 #else
 		Lib.current.addEventListener(Event.ADDED_TO_STAGE, onAddedToStage	); 
@@ -67,11 +67,14 @@ class Main
 		var startPageBG = Lib.attach("firstScreen");
 		startPageBG.x = -1;
 		startPageBG.y = -1;
-#if debug
+#if !debug
 		Main.mc.stage.addChild(startPageBG);
 #else
 		Main.wrapper.addChild(startPageBG);
 #end
+
+		DataProvider.getViewerId();
+
 		but1 = new serpiente.SButton(200, 150, "Начать игру");
 		//but2 = new serpiente.SButton(200, 150, "Справка");
 		but3 = new serpiente.SButton(200, 200, "Пригласить друзей",25);
@@ -80,7 +83,7 @@ class Main
 		
 		// Start Game
 		but1.but.addEventListener(MouseEvent.CLICK, function(e: MouseEvent) {
-#if debug
+#if !debug
 			Main.mc.stage.removeChild(startPageBG);
 #else
 			Main.wrapper.removeChild(startPageBG);
@@ -90,7 +93,6 @@ class Main
 			but3.hide();
 			but4.hide();
 			
-			DataProvider.getViewerId();
 			
 			new Scores();
 			new StartPage();

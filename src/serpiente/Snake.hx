@@ -81,7 +81,7 @@ class Snake {
 	
 	
 	public function updateProgress(e:TimerEvent) {
-		if ((head.x < 25)||(head.x>475)||(head.y < 25)||(head.y >475)) {
+		if ((head.x < 25)||(head.x>575)||(head.y < 25)||(head.y >525)) {
 			Main.gameOver();
 			return;
 		}
