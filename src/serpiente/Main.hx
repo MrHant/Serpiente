@@ -1,4 +1,10 @@
-﻿package serpiente;
+﻿/**
+ * ...
+ * @author MrHant
+ */
+
+
+package serpiente;
 
 import flash.display.MovieClip;
 import flash.events.Event;
@@ -6,11 +12,6 @@ import flash.events.MouseEvent;
 import flash.Lib;
 
 import serpiente.SButton;
-
-/**
- * ...
- * @author MrHant
- */
 
 class Main 
 {
