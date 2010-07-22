@@ -31,14 +31,15 @@
   <compileTargets>
     <compile path="src\Main.hx" />
     <compile path="src\serpiente\Main.hx" />
-    <compile path="src\serpiente\SButton.hx" />
     <compile path="src\serpiente\BodyPart.hx" />
     <compile path="src\serpiente\Bonus.hx" />
     <compile path="src\serpiente\Game.hx" />
     <compile path="src\serpiente\LibraryClasses.hx" />
     <compile path="src\serpiente\Scores.hx" />
-    <compile path="src\serpiente\Snake.hx" />
     <compile path="src\serpiente\StartPage.hx" />
+    <compile path="src\serpiente\snake\Snake.hx" />
+    <compile path="src\serpiente\SButton.hx" />
+    <compile path="src\serpiente\snake\Head.hx" />
   </compileTargets>
   <!-- Assets to embed into the output SWF -->
   <library>

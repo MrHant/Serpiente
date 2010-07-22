@@ -45,11 +45,11 @@ class Main
 		var startPageBG = Lib.attach("firstScreen");
 		startPageBG.x = -1;
 		startPageBG.y = -1;
-#if debug
-		Main.mc.stage.addChild(startPageBG);
-#else
-		Main.wrapper.addChild(startPageBG);
-#end
+		#if debug
+			Main.mc.stage.addChild(startPageBG);
+		#else
+			Main.wrapper.addChild(startPageBG);
+		#end
 		but1 = new serpiente.SButton(200, 150, "Начать игру");
 		//but2 = new serpiente.SButton(200, 150, "Справка");
 		but3 = new serpiente.SButton(200, 200, "Пригласить друзей",25);
@@ -57,11 +57,11 @@ class Main
 		
 		// Start Game
 		but1.but.addEventListener(MouseEvent.CLICK, function(e: MouseEvent) {
-#if debug
-			Main.mc.stage.removeChild(startPageBG);
-#else
-			Main.wrapper.removeChild(startPageBG);
-#end				
+			#if debug
+				Main.mc.stage.removeChild(startPageBG);
+			#else
+				Main.wrapper.removeChild(startPageBG);
+			#end				
 			but1.hide();
 			//but2.hide();
 			but3.hide();
@@ -78,6 +78,6 @@ class Main
       		Main.wrapper.external.showInstallBox();
       	});
 	}
+		
 	
-
 }
