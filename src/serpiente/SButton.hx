@@ -35,14 +35,14 @@ class SButton
 		txt.width = 300;
 		txt.selectable = false;
 		
-		Main.mc.stage.addChild(txt);
+		Main.addChild(txt);
 		
-		Main.mc.stage.addChild(but);
+		Main.addChild(but);
 	}
 	
 	public function hide() {
-		Main.mc.stage.removeChild(txt);
-		Main.mc.stage.removeChild(but);
+		Main.removeChild(txt);
+		Main.removeChild(but);
 		
 	}
 }

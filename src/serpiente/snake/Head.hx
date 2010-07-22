@@ -34,11 +34,7 @@ class Head
 		shape.x = 100;
 		shape.y = 100;
 		
-		#if debug	
-			Main.mc.stage.addChild(shape);
-		#else
-			Main.wrapper.addChild(shape);
-		#end			
+		Main.addChild(shape);
 	}
 	
 }

@@ -22,11 +22,11 @@ class Main
 	static function main() 
 	{
 
-#if debug
-		onAddedToStage();
-#else
-		Lib.current.addEventListener( Event.ADDED_TO_STAGE, onAddedToStage ); 
-#end
+		#if debug
+			onAddedToStage();
+		#else
+			Lib.current.addEventListener( Event.ADDED_TO_STAGE, onAddedToStage ); 
+		#end
 
 	}
 	public static var but1 : serpiente.SButton;
@@ -45,11 +45,8 @@ class Main
 		var startPageBG = Lib.attach("firstScreen");
 		startPageBG.x = -1;
 		startPageBG.y = -1;
-		#if debug
-			Main.mc.stage.addChild(startPageBG);
-		#else
-			Main.wrapper.addChild(startPageBG);
-		#end
+		Main.addChild(startPageBG);
+		
 		but1 = new serpiente.SButton(200, 150, "Начать игру");
 		//but2 = new serpiente.SButton(200, 150, "Справка");
 		but3 = new serpiente.SButton(200, 200, "Пригласить друзей",25);
@@ -57,11 +54,7 @@ class Main
 		
 		// Start Game
 		but1.but.addEventListener(MouseEvent.CLICK, function(e: MouseEvent) {
-			#if debug
-				Main.mc.stage.removeChild(startPageBG);
-			#else
-				Main.wrapper.removeChild(startPageBG);
-			#end				
+			Main.removeChild(startPageBG);
 			but1.hide();
 			//but2.hide();
 			but3.hide();
@@ -78,6 +71,16 @@ class Main
       		Main.wrapper.external.showInstallBox();
       	});
 	}
-		
+	
+	public static inline function addChild(o: Dynamic) 
+	{
+			Main.mc.stage.addChild(o);
+	}
+
+	public static inline function removeChild(o: Dynamic) 
+	{
+			Main.mc.stage.removeChild(o);
+	}
+	
 	
 }
