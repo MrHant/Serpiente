@@ -54,10 +54,26 @@ class Main
 		//but2 = new serpiente.SButton(200, 150, "Справка");
 		but3 = new serpiente.SButton(200, 200, "Пригласить друзей",25);
 		but4 = new serpiente.SButton(200, 250, "Добавить на страницу",25);
-		//Main.but
+		
+		// Start Game
+		but1.but.addEventListener(MouseEvent.CLICK, function(e: MouseEvent) {
+#if debug
+			Main.mc.stage.removeChild(startPageBG);
+#else
+			Main.wrapper.removeChild(startPageBG);
+#end				
+			but1.hide();
+			//but2.hide();
+			but3.hide();
+			but4.hide();
+			
+			var game = new Game();
+      	});
+		
 		but3.but.addEventListener(MouseEvent.CLICK, function(e: MouseEvent) {
       		Main.wrapper.external.showInviteBox();
       	});
+		
 		but4.but.addEventListener(MouseEvent.CLICK, function(e: MouseEvent) {
       		Main.wrapper.external.showInstallBox();
       	});

@@ -16,6 +16,7 @@ import flash.text.TextFormat;
 class SButton 
 {
     public var but : SimpleButton ;
+	public var txt : TextField;
 
 	public function new(x: Int, y:Int, str:String,size:Int=40) 
 	{
@@ -26,7 +27,7 @@ class SButton
 		but.x = x;
 		but.y = y;
 		
-		var txt : TextField = new TextField();
+		txt = new TextField();
 		txt.defaultTextFormat = new TextFormat("Monotype Corsiva",size,5983628);
 		txt.text = str;
 		txt.x = x + 150;
@@ -39,4 +40,9 @@ class SButton
 		Main.mc.stage.addChild(but);
 	}
 	
+	public function hide() {
+		Main.mc.stage.removeChild(txt);
+		Main.mc.stage.removeChild(but);
+		
+	}
 }
